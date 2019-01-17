@@ -3,6 +3,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>CommentStripper</RootNamespace>
     <AssemblyName>CommentStripper</AssemblyName>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <NuspecFile>CommentStripper.nuspec</NuspecFile>
   </PropertyGroup>
 </Project>
