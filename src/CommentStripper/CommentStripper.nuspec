@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CommentStripper</id>
+    <version>0.0.1</version>
+    <title>Comment Stripper</title>
+    <authors>Sergey Slepov</authors>
+    <owners>Sergey Slepov</owners>
+    <projectUrl>https://github.com/morpher-ru/CommentStripper</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Strips out comments from XML doc for private members</description>
+    <releaseNotes>Initial release of the Comment Stripper package.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>xmldoc comments</tags>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file target="lib/netstandard1.0/" />
+    <file target="lib/net461/" />
+    <file src="CommentStripper.targets" target="build/net461/CommentStripper.targets" />
+    <file src="CommentStripper.targets" target="build/netstandard2.0/CommentStripper.targets" />
+    <file src="DoCommentStripping.targets" target="tools/" />
+    <file src="bin\Debug\net461\**\*" target="tools/net461/" />
+    <file src="bin\Debug\netcoreapp2.0\**\*" target="tools/netcoreapp2.0/" />
+  </files>
+</package>
