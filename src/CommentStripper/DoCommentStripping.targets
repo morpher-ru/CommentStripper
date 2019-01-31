@@ -1,0 +1,10 @@
+﻿<Project>
+  <PropertyGroup>
+    <CommentStripperExe Condition="'$(MSBuildRuntimeType)' == 'Full'">"$(MSBuildThisFileDirectory)net461\CommentStripper.exe"</CommentStripperExe>
+    <CommentStripperExe Condition="'$(MSBuildRuntimeType)' == 'Core'">"dotnet $(MSBuildThisFileDirectory)netcoreapp2.0\CommentStripper.dll"</CommentStripperExe>
+  </PropertyGroup>
+
+  <Target Name="StripComments" AfterTargets="Build" Condition="'$(DocumentationFile)' != ''">
+    <Exec Command="$(CommentStripperExe) $(TargetPath) $(DocumentationFile)" />
+  </Target>
+</Project>

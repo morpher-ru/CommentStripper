@@ -1,7 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentStripper", "CommentStripper\CommentStripper.csproj", "{72C89BC8-0802-4363-9C62-351441CF4300}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB9648A5-6B90-4008-90DC-BB5B0E24FC50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommentStripper", "src\CommentStripper\CommentStripper.csproj", "{373434E3-922D-41BC-B8BA-4E15433C0526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72C89BC8-0802-4363-9C62-351441CF4300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72C89BC8-0802-4363-9C62-351441CF4300}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72C89BC8-0802-4363-9C62-351441CF4300}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72C89BC8-0802-4363-9C62-351441CF4300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373434E3-922D-41BC-B8BA-4E15433C0526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373434E3-922D-41BC-B8BA-4E15433C0526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373434E3-922D-41BC-B8BA-4E15433C0526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373434E3-922D-41BC-B8BA-4E15433C0526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{373434E3-922D-41BC-B8BA-4E15433C0526} = {FB9648A5-6B90-4008-90DC-BB5B0E24FC50}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FFF2A457-0BBE-4D9F-8CC5-36847B951709}
 	EndGlobalSection
 EndGlobal
